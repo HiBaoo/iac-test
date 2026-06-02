@@ -1,5 +1,5 @@
 region        = "cn-beijing"
-endpoint      = "open.stable.volcengineapi-test.com"
+endpoint      = "open.volcengineapi.com"
 vpc_name      = "vpc-demo"
 cidr_block    = "192.168.0.0/24"
 description   = "VpcDemo Example"
