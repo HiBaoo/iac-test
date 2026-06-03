@@ -65,7 +65,9 @@ variable "tags" {
 # ------------------------------
 provider "volcenginecc" {
   region   = var.region
-  endpoint = var.endpoint
+  endpoints {
+    cloudcontrolapi = var.endpoint
+  }
 }
 
 # ------------------------------
