@@ -60,11 +60,13 @@ variable "tags" {
 }
 
 # ------------------------------
-# Provider 配置（含 endpoint）
+# Provider 配置（已修复！）
 # ------------------------------
 provider "volcenginecc" {
   region   = var.region
-  endpoints = {
+
+  # 这里修复成正确语法
+  endpoints {
     cloudcontrolapi = var.endpoint
   }
 }
@@ -73,12 +75,12 @@ provider "volcenginecc" {
 # 创建 VPC
 # ------------------------------
 resource "volcenginecc_vpc_vpc" "VpcDemo" {
-  vpc_name             = var.vpc_name
-  description          = var.description
-  cidr_block           = var.cidr_block
+  vpc_name              = var.vpc_name
+  description           = var.description
+  cidr_block            = var.cidr_block
   support_ipv_4_gateway = true
-  project_name         = var.project_name
-  tags                 = var.tags
+  project_name          = var.project_name
+  tags                  = var.tags
 }
 
 # ------------------------------
@@ -86,4 +88,27 @@ resource "volcenginecc_vpc_vpc" "VpcDemo" {
 # ------------------------------
 data "volcenginecc_vpc_vpc" "VpcDataSource" {
   id = volcenginecc_vpc_vpc.VpcDemo.id
+}
+
+# ------------------------------
+# ✅ output 已添加
+# ------------------------------
+output "vpc_id" {
+  value       = volcenginecc_vpc_vpc.VpcDemo.id
+  description = "VPC ID"
+}
+
+output "vpc_name" {
+  value       = volcenginecc_vpc_vpc.VpcDemo.vpc_name
+  description = "VPC 名称"
+}
+
+output "vpc_cidr_block" {
+  value       = volcenginecc_vpc_vpc.VpcDemo.cidr_block
+  description = "VPC 网段"
+}
+
+output "status" {
+  value       = data.volcenginecc_vpc_vpc.VpcDataSource.status
+  description = "VPC 状态"
 }
