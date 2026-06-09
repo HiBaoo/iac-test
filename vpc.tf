@@ -17,7 +17,7 @@ variable "region" {
 
 variable "endpoint" {
   type        = string
-  description = "自定义API endpoint"
+  description = "自定义API endpoints"
   default     = "open.volcengineapi.com"
 }
 
