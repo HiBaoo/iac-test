@@ -12,7 +12,7 @@ terraform {
 variable "region" {
   type        = string
   description = "地域"
-  default     = "cn-beijing"
+  default     = "cn-guilin-boe"
 }
 
 variable "endpoint" {
