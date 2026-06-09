@@ -24,7 +24,7 @@ variable "endpoint" {
 variable "vpc_name" {
   type        = string
   description = "VPC名称"
-  default     = "vpc-demo2"
+  default     = "vpc-demo"
 }
 
 variable "cidr_block" {
