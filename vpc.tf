@@ -66,7 +66,7 @@ provider "volcenginecc" {
   region   = var.region
 
   # 这里修复成正确语法
-  endpoints {
+  endpoints = {
     cloudcontrolapi = var.endpoint
   }
 }
