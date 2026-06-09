@@ -72,7 +72,7 @@ provider "volcenginecc" {
 # ------------------------------
 # 创建 VPC
 # ------------------------------
-resource "volcenginecc_vpc_vpc" "VpcDemo1" {
+resource "volcenginecc_vpc_vpc" "VpcDemo" {
   vpc_name             = var.vpc_name
   description          = var.description
   cidr_block           = var.cidr_block
