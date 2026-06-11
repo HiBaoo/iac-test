@@ -78,7 +78,7 @@ resource "volcenginecc_vpc_vpc" "VpcDemo" {
   vpc_name              = var.vpc_name
   description           = var.description
   cidr_block            = var.cidr_block
-  support_ipv_4_gateway = true
+  support_ipv_4_gateway = false
   project_name          = var.project_name
   tags                  = var.tags
 }
