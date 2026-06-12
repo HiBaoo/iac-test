@@ -42,7 +42,6 @@ variable "description" {
 variable "project_name" {
   type        = string
   description = "项目名称"
-  default     = "default"
 }
 
 variable "tags" {
