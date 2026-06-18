@@ -4,7 +4,7 @@ terraform {
       source  = "volcengine/volcenginecc"
     }
   }
-}
+} 
 
 # ------------------------------
 # 变量提取（全部可配置）
