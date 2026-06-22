@@ -1,4 +1,4 @@
-region        = "cn-beijing"
+region        = "cn-guilin-boe"
 endpoint      = "open.stable.volcengineapi-test.com"
 vpc_name      = "vpc-demo333"
 cidr_block    = "192.168.0.0/24"
