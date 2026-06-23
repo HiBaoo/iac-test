@@ -21,6 +21,7 @@ variable "endpoint" {
   default = "open.volcengineapi.com"
 }
 
+
 variable "region" {
   type    = string
   default = "cn-beijing"
