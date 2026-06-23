@@ -16,6 +16,7 @@ variable "tags" {
   ]
 }
 
+
 variable "endpoint" {
   type    = string
   default = "open.volcengineapi.com"
