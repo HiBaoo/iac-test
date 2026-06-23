@@ -19,12 +19,12 @@ variable "tags" {
 
 variable "endpoint" {
   type    = string
-  default = "open.volcengineapi.com"
+  default = "open.stable.volcengineapi-test.com"
 }
 
 
 variable "region" {
   type    = string
-  default = "cn-beijing"
+  default = "cn-guilin-boe"
 }
 
