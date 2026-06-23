@@ -16,3 +16,13 @@ variable "tags" {
   ]
 }
 
+variable "endpoint" {
+  type    = string
+  default = "open.volcengineapi.com"
+}
+
+variable "region" {
+  type    = string
+  default = "cn-beijing"
+}
+
