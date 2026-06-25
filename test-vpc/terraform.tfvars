@@ -1,4 +1,4 @@
-region        = "cn-guilin-boe"
+region        = "cn-beijing"
 endpoint      = "cloudcontrol.cn-beijing.volcengineapi.com"
 vpc_name      = "vpc-demo12345678"
 cidr_block    = "192.168.0.0/24"
