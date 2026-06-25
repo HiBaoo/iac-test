@@ -6,7 +6,7 @@ resource "random_string" "suffix" {
 
 resource "volcenginecc_vpc_vpc" "VPCDemo" {
   vpc_name     = "terratest-vpc-${random_string.suffix.result}"
-  description  = "test"
+  description  = "test11"
   cidr_block   = "192.168.0.0/16"
   enable_ipv_6 = true
   project_name = var.project_name
