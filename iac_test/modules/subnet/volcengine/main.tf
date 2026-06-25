@@ -10,6 +10,7 @@ module "vpc" {
   tags         = var.tags
 }
 
+
 resource "volcenginecc_vpc_subnet" "SubnetDemo" {
   subnet_name = "terratest-subnet-${random_string.suffix.result}"
   description = "test"
