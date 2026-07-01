@@ -1,6 +1,6 @@
 region        = "cn-guilin-boe"
 endpoint      = "open.stable.volcengineapi-test.com"
-vpc_name      = "vpc-demo-bbbbb"
+vpc_name      = "vpc-demo-hhhhh"
 cidr_block    = "192.168.0.0/24"
 description   = "VpcDemo Example6"
 
