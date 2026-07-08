@@ -3,6 +3,9 @@ terraform {
     volcenginecc = {
       source  = "volcengine/volcenginecc"
     }
+    time = {
+      source = "hashicorp/time"
+    }
   }
 }
 
@@ -72,9 +75,19 @@ provider "volcenginecc" {
 }
 
 # ------------------------------
+# 增加10分钟等待
+# ------------------------------
+resource "time_sleep" "wait_before_vpc" {
+  create_duration = "10m"
+}
+
+# ------------------------------
 # 创建 VPC
 # ------------------------------
 resource "volcenginecc_vpc_vpc" "VpcDemo" {
+  depends_on = [
+    time_sleep.wait_before_vpc
+  ]
   vpc_name              = var.vpc_name
   description           = var.description
   cidr_block            = var.cidr_block
