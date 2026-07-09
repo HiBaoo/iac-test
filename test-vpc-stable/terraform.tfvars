@@ -6,7 +6,7 @@ description   = "VpcDemo Example 0000000"
 
 tags = [
   {
-    key   = "env2"
-    value = "test2"
+    key   = "env3"
+    value = "test3"
   }
 ]
