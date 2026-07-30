@@ -2,7 +2,7 @@ region        = "cn-guilin-boe"
 endpoint      = "open.stable.volcengineapi-test.com"
 vpc_name      = "vpc-demo-727testws"
 cidr_block    = "192.168.0.0/24"
-description   = "VpcDemo Example 666666"
+description   = "VpcDemo Example 66666666"
 
 tags = [
   {
